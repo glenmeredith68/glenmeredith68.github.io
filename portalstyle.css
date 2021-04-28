@@ -1,24 +1,25 @@
-body {
+body {}
 
-}
 header {
     background-color: #643219;
     border-radius: 25px;
 
 }
+
 header h1 {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-header img {
 
-}
-main {
+header img {}
 
-}
+main {}
+
 footer {
-
+    background-color: #643219;
+    border-radius: 25px;
 }
+
 .makeyellow {
-    background-color: #cba811;
+    color: #cba811;
 }
