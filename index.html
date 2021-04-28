@@ -7,13 +7,7 @@
     <meta name="description"
         content="This is the page for Glen Meredith to post assignments completed for the WDD 230 class at BYUI. ">
     <title>Glen's WDD_230 Portal Home Page</title>
-    <script>
-        function getDate() { 
-            let d = new Date().getFullYear;
-            document.getElementById("outputspan").innerHTML = d; 
-            } 
-            getDate();
-            </script>
+
 </head>
 
 <body>
@@ -30,12 +24,19 @@
         </ul>
     </main>
     <footer>
-        <p>&#169<span id="outputspan"></span> | Glen Meredith | Massachusetts | <a href="https://www.byui.edu/online"><u>BYUI Online
-                Learning</u></a></p>
+        <p>&#169<span id="outputspan"></span> | Glen Meredith | Massachusetts | <a
+                href="https://www.byui.edu/online"><u>BYUI Online Learning</u></a></p>
         <script>
 
         </script>
     </footer>
 </body>
+<script>
+    function getDate() {
+        let d = new Date().getFullYear;
+        document.getElementById("outputspan").innerHTML = d;
+    }
+    getDate();
+</script>
 
 </html>
