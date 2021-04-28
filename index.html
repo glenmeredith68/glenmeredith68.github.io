@@ -24,9 +24,9 @@
         </ul>
     </main>
     <footer>
-        <p>&#169<span id="outputspan"></span> | Glen Meredith | Massachusetts | <a
+        <p>&#169 <span id="outputspan"></span> | Glen Meredith | Massachusetts | <a
                 href="https://www.byui.edu/online"><u>BYUI Online Learning</u></a></p>
-        
+        <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
 </body>
 <script>
@@ -35,6 +35,11 @@
         document.getElementById("outputspan").innerHTML = d;
     }
     getDate();
+    function getModified() {
+        let m = document.lastModified();
+        document.getElementById("lastmod").innerHTML = m;
+    }
+    getModified();
 </script>
 
 </html>
