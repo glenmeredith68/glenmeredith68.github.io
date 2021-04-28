@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/normalize.css"
     <!--<link rel="stylesheet" href="portalstyle.css">-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +21,8 @@
             background-color: #643219;
             border-radius: 15px;
             display: grid;
-            grid-template-columns: auto auto auto auto;
-
+            grid-template-columns: auto auto auto 150px;
+            max-height: 6em;
         }
 
         header h1 {
@@ -29,14 +30,17 @@
             font-size: 3em;
             grid-column: 1 / 4;
             text-align: center;
-
+            padding-bottom: 0px;
+            margin-top: .5em;
 
         }
 
         header img {
             grid-column: 4 / 5;
-            box-shadow: 4px 4px 5px 5px gray, -4px -4px 5px 5px gray;
-            margin-top: 7px;
+            box-shadow: 1px 1px 20px black, -1px -1px 20px black;
+            margin-top: 10px;
+            
+            ;
         }
 
         main {}
@@ -48,10 +52,10 @@
 
         footer {
             background-color: #643219;
-            border-radius: 15px;
+            border-radius: 10px;
             color: white;
             text-align: center;
-            font-size: .5em;
+            font-size: .75em;
         }
 
         .makeyellow {
@@ -63,7 +67,7 @@
 <body>
     <header>
         <h1>Glen Meredith</h1>
-        <img src="SmallPoopingGlen_13.jpeg" alt="Glen smiling">
+        <img src="Webp.net-resizeimage.jpg" alt="Glen smiling">
     </header>
     <main>
         <h2>WDD 230: Assignment Portal</h2>
