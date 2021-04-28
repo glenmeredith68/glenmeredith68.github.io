@@ -15,7 +15,9 @@
 
         header {
             background-color: #643219;
-            border-radius: 25px;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
 
         }
 
@@ -26,7 +28,10 @@
 
         }
 
-        header img {}
+        header img {
+            grid-column: 4 / 5;
+            box-shadow: 1em 1em gray, -1em -1em gray;
+        }
 
         main {}
 
@@ -37,7 +42,7 @@
 
         footer {
             background-color: #643219;
-            border-radius: 25px;
+            border-radius: 15px;
             color: white;
         }
 
