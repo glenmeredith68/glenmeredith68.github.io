@@ -1,4 +1,6 @@
-body {}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 header {
     background-color: #643219;
@@ -7,17 +9,25 @@ header {
 }
 
 header h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4em;
+
 
 }
 
 header img {}
 
-main {}
+main {
 
+}
+main h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
 footer {
     background-color: #643219;
     border-radius: 25px;
+    color: white;
 }
 
 .makeyellow {
