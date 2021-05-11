@@ -2,61 +2,52 @@ body {
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     max-width: 900px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 1rem;
     color: #4b4b4b;
 
 }
 
 header {
     background-color: #e00618;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: auto auto auto 150px;
-    max-height: 6em;
+    max-height: 6rem;
+    margin: .15rem;
 }
 
 header h1 {
     color: white;
-    font-size: 3em;
-    grid-column: 1 / 4;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 0px;
-    margin-top: .5em;
+    margin-top: .5rem;
 
 }
 
 header img {
     grid-column: 4 / 5;
-    box-shadow: 1px 1px 20px black, -1px -1px 20px black;
     margin-top: 10px;
-
-    ;
 }
 
-main {}
-
 main h2 {
-    font-size: 2em;
+    font-size: 1.25rem;
     font-weight: bold;
     border-bottom: 1px solid black;
 }
 
 footer {
     background-color: #9da;
-    border-radius: 10px;
     color: white;
     text-align: center;
-    font-size: .75em;
-    height: 4em;
+    font-size: .75rem;
+    height: 4rem;
 }
 
 .footerlong {
     margin-bottom: 0px;
-    padding-top: .75em;
+    padding-top: .75rem;
 }
 
 .makeyellow {
     color: #cba811;
     margin-top: 0px;
-    padding-top: .5em;
+    padding-top: .5rem;
 }
