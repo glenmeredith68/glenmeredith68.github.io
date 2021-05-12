@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/design-principles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Design Principles Document</h1>
+        <h2>Glen Meredith</h2>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h3>White Space and Clean Design</h3>
+            </div>
+            <p>Medium</p>
+            <a href="https://medium.com/">medium.com</a>
+            <img src="../images/medium.jpg" alt="Medium.com home page screenshot">
+            <p>Medium.com uses white space and clean design in a powerful way. The whitespace around
+                the
+                text makes it easy and relaxing to find where the important things on the page are
+                like
+                words and buttons. I especially like this example as it shows that white space can
+                be
+                other colors too. There is clean design here closely related to the white space.
+                Since
+                there is ample white space, the design feels clean and not cluttered or distressing
+                to
+                look at. I feel good when I look at this page.</p>
+        </section>
+        <section>
+            <div>
+                <h3>Contrast</h3>
+            </div>
+            <p>Taco Bell</p>
+            <a href="https://www.tacobell.com/">tacobell.com</a>
+            <img src="../images/tacoBell.jpg" alt="Tacobell.com home page screenshot">
+            <p>Tacobell.com uses contrast here to draw your attention to the fact that they are
+                hiring.
+                The white is very contrasted with the dark purple so that there is a clear attention
+                grab and break in the action on the page. It is clear that they are not talking
+                about
+                the Crunchwrap Supreme and have moved on to talking about hiring. The contrast isn't
+                too
+                harsh to look at, but isn't too subtle to notice.</p>
+        </section>
+        <section>
+            <div>
+                <h3>Repetition</h3>
+            </div>
+            <p>Wikihow</p>
+            <a href="https://www.wikihow.com/Make-Smores-in-a-Microwave">Wikihow.com</a>
+            <img src="../images/smores.jpg" alt="Wikihow.com page about smores screenshot">
+            <p>Wikihow.com makes good use of repetition. All the typography is consistent
+                throughout,
+                and the images are the same size and style so that it is easy for the viewre to
+                anticipate where the information will be and how to find it. The colors are
+                sonsistent
+                with their various elements so it is pleasing to the eye. The use of numbers also
+                helps
+                the viewer through the use of repetition.</p>
+        </section>
+    </main>
+    <footer>
+        <p class="footerlong">&#169; <span id="outputspan"></span> | Glen Meredith | Last Modified:
+            <span id="lastmod"></span>
+        </p>
+    </footer>
+</body>
+<script>
+    function getDate() {
+        let d = new Date().getFullYear();
+        document.getElementById("outputspan").innerHTML = d;
+    }
+    getDate();
+    function getModified() {
+        let m = document.lastModified;
+        document.getElementById("lastmod").innerHTML = m;
+    }
+    getModified();
+</script>
+
+</html>
