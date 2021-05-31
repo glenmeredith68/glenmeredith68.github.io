@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lesson03/css/fishingInMedway.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="../lesson03/js/fishingInMedway.js"></script>
+    <title>Fishing in Medway - Target Audience</title>
+</head>
+
+<body>
+    <header>
+        <div class='mobilenavtopgrid'>
+            <a href="index.html"><img src="../lesson03/images/iconfinder__Fish_754632.svg"
+                    alt="Fish Logo" id='logo'></a>
+            <h1>Fishing in Medway</h1>
+        </div>
+        <div class="mainnavbottomgrid">
+            <h2>Conditions and spots for fishing in Medway, MA</h2>
+            <nav>
+                <ul id='navigation'>
+                    <li><a class="ham" href="#">&#9776;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../lesson03/target-audience.html" class='active'>Target Audience</a></li>
+                    <li><a href="color-scheme.html">Color Scheme</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Site Target Audience</h2>
+        <p>The target audience for this site is people that live in and around Medway who are
+            interested in fishing or want to become interested in fishing and want to know more
+            about the Medway fishing scene.</p>
+        <h2>Personas</h2>
+        <ol>
+            <li>The first persona is someone like myself. I am pretty new to the fishing scene, and
+                I don't know a whole lot about it. I know the basics, but I could use a little more
+                help in the way of tips. I have lived in Medway all my life, but I have no idea
+                where I can fish around here. I come to the site wondering, where can I fish, and
+                what weather is best for fishing? </li>
+            <li>The second persona is someone who is more experienced at fishing. They have lots of
+                fishing under their belt, but perhaps are new to the area or simply looking for a
+                new spot to try when casting their line. They probably don't need any tips, but they
+                can submit tips of their own an check out the maps and pictures to see where they
+                want to go. The weather forecast provided will help them to make the best judgment
+                on whether or not today is a good day to fish.</li>
+        </ol>
+        <h2>Scenarios</h2>
+        <ol>
+            <li>A new fisher comes to the site wondering what he can do to up his or her fishing
+                game to the next level and finds tips to help themself.</li>
+            <li>An experienced fisher fomes to the site wondering what are the conditions such as
+                cloud cover and wind speed so that they can make the best call on whether or not
+                today might be a successful fishing day.</li>
+            <li>A fisher from out of town visits the site wondering where the fishing hotspots are
+                and comes away knowing where they want to fish that day or in the future.</li>
+            <li>Someone from outside of Medway who is considering visiting in the future comes to
+                the site for research to find out what there is to do in Medway. They learn about
+                the excitement of fishing and feel it in the Gallery pictures. They are more
+                interested in coming to Medway because of what they see and feel.</li>
+            <li>A fisher of any level comes to the site to find out what the record sizes and
+                weights are for fish caught in Medway.</li>
+        </ol>
+
+    </main>
+    <footer>
+        <p class="footerlong">&#169; <span id="outputspan"></span> | Glen Meredith | Last Modified:
+            <span id="lastmod"></span>
+        </p>
+    </footer>
+</body>
+<script>function getDate() {
+        let d = new Date().getFullYear();
+        document.getElementById("outputspan").innerHTML = d;
+    }
+    getDate();
+    function getModified() {
+        let m = document.lastModified;
+        document.getElementById("lastmod").innerHTML = m;
+    }
+    getModified();
+</script>
+
+</html>
