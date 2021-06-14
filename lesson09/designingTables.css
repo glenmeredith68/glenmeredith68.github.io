@@ -1,0 +1,29 @@
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+}
+table,td,th {
+    border: 1px solid black;
+    max-width: 100%;
+    color: white;
+}
+table{
+    border-collapse: collapse;
+    background-color: #004d71;
+}
+.logo {
+    width: 80px;
+    max-width: 100%;
+}
+
+.sports {
+    font-size: 3em;
+    color: #95d600;
+}
+.totals  {
+    background-color: #55565a;
+}
+.team {
+    background-color: #89abbc;
+}
