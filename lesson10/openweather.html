@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const url = 'https://api.openweathermap.org/data/2.5/weather?zip=83440,us&appid=3dfddebdffb23a7d9f4fa001ca3e943b';
+        fetch(url).then(function (response) { return response.json() }).then(function (jsonObject) {
+            const weather = jsonObject['weather'];
+            console.log(weather);
+
+
+        for (let i = 0; i < weather.length; i++) {
+            let container = document.createElement('div');
+            let p1 = document.createElement('p');
+            let p2 = document.createElement('p');
+            let p3 = document.createElement('p');
+            let p4 = document.createElement('p');
+            p1.textContent = `The weather in Rexburg is ${weather[i].main}.`;
+            container.appendChild(p1);
+            document.querySelector('div.weatherbox').appendChild(container);
+
+        }
+    
+    
+    
+    
+    
+    
+    
+    })
+
+    </script>
+    <title>Open Weather</title>
+</head>
+
+<body>
+    <div class="weatherbox"></div>
+
+</body>
+
+</html>
