@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="css/prestonCss.css">
-    <script src="preston-4.js"></script>
+    <link rel="stylesheet" href="css/preston-4.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya:wght@400;500&display=swap"
+        rel="stylesheet">
     <title>Preston Sun</title>
 </head>
 
@@ -24,91 +27,89 @@
         <img id='logo' src="../lesson04/images/sunLogo.png" alt="Preston Sun Logo">
         <h1>Preston Sun</h1>
         <div>We don't hide behind clouds</div>
-        <nav>
-            <ul id='navigation'>
-                <li><a class="ham" onclick='toggleMenu()' href="#">&#9776;</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a class='active' href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
+        <a class='ham' onclick='toggleMenu()' href="#">&#9776;</a>
     </header>
+    <nav>
+        <ul class='navigation'>
+            <li><a href="#">Home</a></li>
+            <li><a class='active' href="#">&#9758; Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
     <main>
         <h2>Preston, Idaho</h2>
-        <img id='hero' src="https://source.unsplash.com/random/800x400" alt="PLACEHOLDER">
-        <h3>Weather Summary</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class='forecastbox'>
-            <div class="forecastheader">
-                <h3>Five Day Forecast</h3>
+        <div class="heroimg">
+            <img id='hero' src="https://source.unsplash.com/random/900x300" alt="PLACEHOLDER">
+            <div class="summarybox">
+                <h3>Weather Summary</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+        </div>
+
+        <div class="forecasth3">
+            <h3 id='fiveday'><a>Five Day Forecast</a></h3>
+        </div>
+        <div class="lilsuns">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+        </div>
+        <div class='articlebox'>
             <h4>Article Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <img id='bigarticlepic' src="https://source.unsplash.com/random/400x300"
+                alt="PLACEHOLDER">
+            <p class='smallarticlep'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <img src="https://source.unsplash.com/random/800x402" alt="PLACEHOLDER">
+            <p class="bigarticlep">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor aliquam nulla
+                facilisi cras fermentum odio eu. Placerat orci nulla pellentesque dignissim. Velit
+                euismod in pellentesque massa placerat duis ultricies lacus sed. Neque sodales ut
+                etiam sit amet nisl purus. Fermentum et sollicitudin ac orci phasellus egestas
+                tellus rutrum tellus. Malesuada fames ac turpis egestas maecenas. Id neque aliquam
+                vestibulum morbi blandit cursus risus. Dictum at tempor commodo ullamcorper.
+                Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Donec adipiscing
+                tristique risus nec feugiat in fermentum posuere urna. Donec adipiscing tristique
+                risus nec feugiat in fermentum posuere. Suspendisse faucibus interdum posuere lorem
+                ipsum dolor sit. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.
+
+                Parturient montes nascetur ridiculus mus. Enim diam vulputate ut pharetra. Elementum
+                curabitur vitae nunc sed velit dignissim. Facilisi etiam dignissim diam quis. Ac
+                odio tempor orci dapibus ultrices in iaculis. Nulla facilisi morbi tempus iaculis
+                urna id volutpat lacus laoreet. Ornare quam viverra orci sagittis. Tincidunt vitae
+                semper quis lectus nulla at volutpat. Volutpat maecenas volutpat blandit aliquam
+                etiam erat velit scelerisque in. Ipsum nunc aliquet bibendum enim. Proin sagittis
+                nisl rhoncus mattis rhoncus urna neque.</p>
+            <img id='smallarticlepic' src="https://source.unsplash.com/random/400x300"
+                alt="PLACEHOLDER">
         </div>
     </main>
     <footer>
-        <h5>Contact Information</h5>
-        <p>&#9993; example@me.com</p>
-        <p>&#9990;123-456-7890</p>
-        <img src="https://source.unsplash.com/random/800x401" alt="PLACEHOLDER">
-        <span id="outputspan"></span>
+        <div class="footercontent">
+            <h3>Contact Information</h3>
+            <p id="address"><span class="contact">📍</span> 123 West St. Monmouth, OR 12345</p>
+            <p><span class='contact'>📧</span> example@me.com</p>
+            <p><span class='contact'>📞</span> 123-456-7890</p>
+            <img class='map' src="https://source.unsplash.com/random/400x200" alt="PLACEHOLDER">
+            <div class="socials">
+                <a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook Logo"></a>
+                <a href="http://www.pinterest.com"><img src="../images/pinterest.png" alt="Pinterest Logo"></a>
+                <a href="http://www.youtube.com"><img src="../images/youtube.png" alt="Youtube Logo"></a>
+            </div>
+            <div class="date"><span id="outputspan"></span></div>
+        </div>
     </footer>
 </body>
-<script>
-    function getDate() {
-        let year = new Date().getFullYear();
-        let month = new Date().getMonth();
-        if (month == 0) {
-            month = 'January'
-        }
-        if (month == 1) {
-            month = 'February'
-        }
-        if (month == 2) {
-            month = 'March'
-        }
-        if (month == 3) {
-            month = 'April'
-        }
-        if (month == 4) {
-            month = 'May'
-        }
-        if (month == 5) {
-            month = 'June'
-        }
-        if (month == 6){
-            month = 'July'
-        }
-        if (month == 7) {
-            month = 'August'
-        }
-        if (month == 8) {
-            month = 'September'
-        }
-        if (month == 9) {
-            month = 'October'
-        }
-        if (month == 10) {
-            month = 'November'
-        }
-        if (month == 11) {
-            month = 'December'
-        }
-        let dayOfMonth = new Date().getDate();
-        let weekdayNumber = new Date().getDay();
-        let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-        weekday = daysOfWeek[weekdayNumber]
-        document.getElementById("outputspan").innerHTML = weekday + ", " + dayOfMonth + " " + month + " " + year;
-    }
-    getDate();
-</script>
+<script src="preston-4.js"></script>
 
 </html>
