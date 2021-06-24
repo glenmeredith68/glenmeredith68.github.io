@@ -79,6 +79,10 @@ main {
     width: 90%;
 }
 
+.elipsis {
+    display: none;
+}
+
 .articlebox {
 
     margin: 0 auto;
@@ -207,27 +211,41 @@ footer {
     }
 
     .heroimg {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        overflow: hidden;
+        position: relative;
+        height: 100%;
+        width: 900px;
+        max-width: 100%;
     }
 
-    #hero {
-        grid-column: 1 / 5;
-        grid-row: 1;
-        z-index: -1;
+    .elipsis {
+        display: inline;
+    }
+
+    .mediumsummary{
+        display: none;
+    }
+
+    .bigsummary {
+        display: none;
     }
 
     .summarybox {
-        grid-column: 1 / 2;
-        grid-row: 1;
+        position: absolute;
+        top: 0;
+        left: .2em;
+        padding-left: 0;
         z-index: 1;
         border: 1px solid slategray;
         background-color: #FFE7C3;
         margin: 1em 65% 1em 2em; 
         padding-left: 1em;
         padding-right: 1em;
-        
+        width: initial;
+        height: fit-content;
+    }
+
+    .summarybox p {
+        margin-bottom: 0;
     }
 
     .forecasth3 {
@@ -301,7 +319,41 @@ footer {
 
 }
 
+@media only screen and (min-width: 684px) {
+    
+    .elipsis {
+        display: none;
+    }
+
+    .mediumsummary {
+        display: inline;
+    }
+    
+
+}
+
+
+
+@media only screen and (min-width: 902px) {
+    
+    
+    .bigsummary {
+        display: inline;
+    }
+
+    .summarybox {
+        top: .7em;
+    }
+
+    .summarybox p {
+        margin-bottom: 16px;
+    }
+
+}
+
+
 @media only screen and (min-width: 63.5em) {
+
     .heroimg {
         margin: 0 auto;
     }
