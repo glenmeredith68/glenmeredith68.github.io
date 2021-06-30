@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/preston-5.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>Preston Sun</title>
+</head>
+
+<body>
+    <!-- pancake banner -->
+    <div class='pancakegrid'>
+        <img src="images/prestonPancakesSmall.jpg" alt="Yummy Pancakes">
+        <div class='pancaketext'>
+            <h2>Tomorrow! Saturday = Pancakes in the Park</h2>
+            <h3>9AM Saturday at the city park pavilion</h3>
+        </div>
+    </div>
+    <header>
+        <img id='logo' src="../lesson04/images/sunLogo.png" alt="Preston Sun Logo">
+        <h1>Preston Sun</h1>
+        <div>We don't hide behind clouds</div>
+        <a class='ham' onclick='toggleMenu()' href="#">&#9776;</a>
+    </header>
+    <nav>
+        <ul class='navigation'>
+            <li><a href="#">Home</a></li>
+            <li><a class='active' href="#">&#9758; Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="heroimg">
+            <img id='hero' src="https://source.unsplash.com/random/900x300" alt="PLACEHOLDER">
+            <div class="summarybox">
+                <h3>Weather Summary</h3>
+                <p>Lorem ipsum dolor sit amet<span class='elipsis'>...</span><span class='mediumsummary'>, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. </span><span class='bigsummary'>Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+            </div>
+        </div>
+
+        <div class="forecasth3">
+            <h3 id='fiveday'><a>Five Day Forecast</a></h3>
+        </div>
+        <div class="lilsuns">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+        </div>
+        <div class='articlebox'>
+            <h4>Article Title</h4>
+            <img id='bigarticlepic' src="https://source.unsplash.com/random/400x300"
+                alt="PLACEHOLDER">
+            <p class='smallarticlep'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="bigarticlep">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor aliquam nulla
+                facilisi cras fermentum odio eu. Placerat orci nulla pellentesque dignissim. Velit
+                euismod in pellentesque massa placerat duis ultricies lacus sed. Neque sodales ut
+                etiam sit amet nisl purus. Fermentum et sollicitudin ac orci phasellus egestas
+                tellus rutrum tellus. Malesuada fames ac turpis egestas maecenas. Id neque aliquam
+                vestibulum morbi blandit cursus risus. Dictum at tempor commodo ullamcorper.
+                Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Donec adipiscing
+                tristique risus nec feugiat in fermentum posuere urna. Donec adipiscing tristique
+                risus nec feugiat in fermentum posuere. Suspendisse faucibus interdum posuere lorem
+                ipsum dolor sit. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.
+
+                Parturient montes nascetur ridiculus mus. Enim diam vulputate ut pharetra. Elementum
+                curabitur vitae nunc sed velit dignissim. Facilisi etiam dignissim diam quis. Ac
+                odio tempor orci dapibus ultrices in iaculis. Nulla facilisi morbi tempus iaculis
+                urna id volutpat lacus laoreet. Ornare quam viverra orci sagittis. Tincidunt vitae
+                semper quis lectus nulla at volutpat. Volutpat maecenas volutpat blandit aliquam
+                etiam erat velit scelerisque in. Ipsum nunc aliquet bibendum enim. Proin sagittis
+                nisl rhoncus mattis rhoncus urna neque.</p>
+            <img id='smallarticlepic' src="https://source.unsplash.com/random/400x300"
+                alt="PLACEHOLDER">
+        </div>
+    </main>
+    <footer>
+        <div class="footercontent">
+            <h3>Contact Information</h3>
+            <p id="address"><span class="contact">📍</span> 123 West St. Monmouth, OR 12345</p>
+            <p><span class='contact'>📧</span> example@me.com</p>
+            <p><span class='contact'>📞</span> 123-456-7890</p>
+            <img class='map' src="images/monmouthMap.png" alt="Map of Momnouth, OR">
+            <div class="socials">
+                <a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook Logo"></a>
+                <a href="http://www.pinterest.com"><img src="../images/pinterest.png" alt="Pinterest Logo"></a>
+                <a href="http://www.youtube.com"><img src="../images/youtube.png" alt="Youtube Logo"></a>
+            </div>
+            <div class="date"><span id="outputspan"></span></div>
+        </div>
+    </footer>
+</body>
+<script src="preston-5.js"></script>
+
+</html>
