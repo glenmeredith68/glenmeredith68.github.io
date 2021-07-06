@@ -26,7 +26,7 @@
     <header>
         <img id='logo' src="../lesson04/images/sunLogo.png" alt="Preston Sun Logo">
         <h1>Preston Sun</h1>
-        <div>We don't hide behind clouds</div>
+        <div class="conditions">We don't hide behind clouds</div>
         <a class='ham' onclick='toggleMenu()' href="#">&#9776;</a>
     </header>
     <nav>
@@ -42,14 +42,29 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div class="heroimg">
-            <img id='hero' src="https://source.unsplash.com/random/900x300" alt="PLACEHOLDER">
+            <img id='hero' src='images/prestonHero.jpeg' alt="Dramatic mountains with great beauty">
             <div class="summarybox">
                 <h3>Weather Summary</h3>
-                <p>Lorem ipsum dolor sit amet<span class='elipsis'>...</span><span class='mediumsummary'>, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore magna aliqua. </span><span class='bigsummary'>Ut enim ad minim veniam, quis nostrud
-                    exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+                <div class="conditionsbox">
+                    <div class="conditions">
+                        <p>Currently: </p><span class='currently'>Sunny</span>
+                    </div>
+                    <div class="conditions">
+                        <p>High: </p><span class='currently'>76 ºF</span>
+                    </div>
+                    <div class="conditions">
+                        <p>Low: </p><span class='currently'>26 ºF</span>
+                    </div>
+                    <div class="conditions">
+                        <p>Wind Chill: </p><span class='currently'> ºF</span>
+                    </div>
+                    <div class="conditions">
+                        <p>Humidity: </p><span class='currently'>69%</span>
+                    </div>
+                    <div class="conditions">
+                        <p>Wind Speed: </p><span class='currently'>5mph</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -57,54 +72,54 @@
             <h3 id='fiveday'><a>Five Day Forecast</a></h3>
         </div>
         <div class="lilsuns">
-            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
-            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
-            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
-            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
-            <img src="https://source.unsplash.com/random/50x50" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?sun" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?rain" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?cloud" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?lightning" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?snow" alt="PLACEHOLDER">
         </div>
         <div class='articlebox'>
-            <h4>Article Title</h4>
-            <img id='bigarticlepic' src="https://source.unsplash.com/random/400x300"
-                alt="PLACEHOLDER">
-            <p class='smallarticlep'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="bigarticlep">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor aliquam nulla
-                facilisi cras fermentum odio eu. Placerat orci nulla pellentesque dignissim. Velit
-                euismod in pellentesque massa placerat duis ultricies lacus sed. Neque sodales ut
-                etiam sit amet nisl purus. Fermentum et sollicitudin ac orci phasellus egestas
-                tellus rutrum tellus. Malesuada fames ac turpis egestas maecenas. Id neque aliquam
-                vestibulum morbi blandit cursus risus. Dictum at tempor commodo ullamcorper.
-                Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Donec adipiscing
-                tristique risus nec feugiat in fermentum posuere urna. Donec adipiscing tristique
-                risus nec feugiat in fermentum posuere. Suspendisse faucibus interdum posuere lorem
-                ipsum dolor sit. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.
-
-                Parturient montes nascetur ridiculus mus. Enim diam vulputate ut pharetra. Elementum
-                curabitur vitae nunc sed velit dignissim. Facilisi etiam dignissim diam quis. Ac
-                odio tempor orci dapibus ultrices in iaculis. Nulla facilisi morbi tempus iaculis
-                urna id volutpat lacus laoreet. Ornare quam viverra orci sagittis. Tincidunt vitae
-                semper quis lectus nulla at volutpat. Volutpat maecenas volutpat blandit aliquam
-                etiam erat velit scelerisque in. Ipsum nunc aliquet bibendum enim. Proin sagittis
-                nisl rhoncus mattis rhoncus urna neque.</p>
-            <img id='smallarticlepic' src="https://source.unsplash.com/random/400x300"
-                alt="PLACEHOLDER">
+            <h4><a class='readmore' target='_blank'
+                href="https://www.prestonidaho.net/mayor-city-council/"> A Message From the Mayor</a>
+            </h4>
+            <img id='bigarticlepic' src='images/prestonArticlePic.jpg'
+                alt="Quaint Preston with sunset">
+            <p class='smallarticlep'> Preston is an agricultural community located on the most
+                northern side of the pristine Cache Valley touting views that can arguably be
+                unmatched. <span class='boldwords'>Cache Valley</span> is also known as “Bridgerland”, which was discovered and
+                explored by the famous American mountain man Jim Bridger nearly 200 years ago. </p>
+            <p class="bigarticlep">&nbsp;&nbsp;&nbsp;&nbsp;"<span class='boldwords'>Preston</span> is an agricultural community located on the most
+                northern side of the pristine Cache Valley touting views that can arguably be
+                unmatched. Cache Valley is also known as “Bridgerland”, which was discovered and
+                explored by the famous American mountain man Jim Bridger nearly 200 years ago. All
+                throughout the year Preston serves as the primary hub to the most rewarding family
+                outdoor activities found in the upper intermountain west. These activities include:
+                <span class="boldwords">snowmobiling</span> in Strawberry Canyon, feeding the family at numerous local fast food
+                restaurants before driving 15 minutes to the only ski resort in Cache Valley.
+                Filling your boat and/or ATV before <span class='boldwords'>waterskiing</span> and <span class="boldwords">fishing</span> on the multiple
+                reservoirs, streams and rivers that also include hunting, hiking and camping into
+                the Cache & Caribou National Forests..."
+            </p>
+            <a class='readmore' target='_blank'
+                href="https://www.prestonidaho.net/mayor-city-council/">Keep Reading</a>
+            <img id='smallarticlepic' src='images/prestonArticlePic.jpg'
+                alt="Quaint Preston with sunset">
         </div>
     </main>
     <footer>
         <div class="footercontent">
             <h3>Contact Information</h3>
-            <p id="address"><span class="contact">📍</span> 123 West St. Monmouth, OR 12345</p>
-            <p><span class='contact'>📧</span> example@me.com</p>
-            <p><span class='contact'>📞</span> 123-456-7890</p>
+            <p id="address"><span class="contact">📍 </span> 123 West St. Monmouth, OR 12345</p>
+            <p><span class='contact'>📧 </span> example@me.com</p>
+            <p><span class='contact'>📞 </span> 123-456-7890</p>
             <img class='map' src="images/monmouthMap.png" alt="Map of Momnouth, OR">
             <div class="socials">
-                <a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook Logo"></a>
-                <a href="http://www.pinterest.com"><img src="../images/pinterest.png" alt="Pinterest Logo"></a>
-                <a href="http://www.youtube.com"><img src="../images/youtube.png" alt="Youtube Logo"></a>
+                <a href="http://www.facebook.com"><img src="../images/facebook.png"
+                        alt="Facebook Logo"></a>
+                <a href="http://www.pinterest.com"><img src="../images/pinterest.png"
+                        alt="Pinterest Logo"></a>
+                <a href="http://www.youtube.com"><img src="../images/youtube.png"
+                        alt="Youtube Logo"></a>
             </div>
             <div class="date"><span id="outputspan"></span></div>
         </div>

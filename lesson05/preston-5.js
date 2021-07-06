@@ -62,7 +62,7 @@ function getDate() {
 getDate();
 
 function pancakeBanner() {
-    getDate();
+    let weekday = getDate();
     if (weekday == 'Friday') {
         document.getElementsByClassName('pancakegrid')[0].style.display = 'grid';
     }

@@ -66,7 +66,7 @@ ul li a {
 
 .navigation li a:hover {
     text-decoration: underline double lightslategray;
-    color: #FFBD59;
+    font-style: italic;
 
 }
 
@@ -79,8 +79,29 @@ main {
     width: 90%;
 }
 
-.elipsis {
-    display: none;
+.summarybox {
+    margin-bottom: 1em;
+}
+
+.conditionsbox {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.conditions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conditions p {
+    margin: 0;
+}
+
+.currently {
+    color: #da9a3a;
 }
 
 .articlebox {
@@ -96,10 +117,12 @@ main {
     border: 1px solid slategray;
     border-bottom: none;
     margin: 0 auto;
+    display: none;
 }
 
 #fiveday {
     text-align: center;
+
 }
 
 .lilsuns {
@@ -110,12 +133,34 @@ h3 a {
     display: block;
 }
 
+
+
 #bigarticlepic {
     display: none;
 }
 
 .bigarticlep {
     display: none;
+}
+
+.boldwords {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.readmore {
+    color: rgb(20, 20, 155);
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.readmore:hover {
+    color: #da9a3a;
+}
+
+.articlebox h4 a {
+    color: black;
+    text-decoration: none;
 }
 
 .pancakegrid {
@@ -150,12 +195,20 @@ footer {
     font-size: 1.2em;
 }
 
-.socials {
+.map {
     display: none;
 }
 
+.socials {
+    max-width: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10%;
+}
 
-@media only screen and (min-width: 32.5em) {
+
+
+@media only screen and (min-width: 594px) {
     body {
         max-width: 960px;
         margin: 0 auto;
@@ -202,6 +255,10 @@ footer {
         display: block;
     }
 
+    .navigation li a:hover {
+        color: #FFBD59;
+    }
+
     .ham {
         display: none;
     }
@@ -213,20 +270,14 @@ footer {
     .heroimg {
         position: relative;
         height: 100%;
+        min-height: 212px;
         width: 900px;
         max-width: 100%;
+        overflow: hidden;
     }
 
-    .elipsis {
-        display: inline;
-    }
-
-    .mediumsummary{
-        display: none;
-    }
-
-    .bigsummary {
-        display: none;
+    .heroimg img {
+        object-fit: cover;
     }
 
     .summarybox {
@@ -236,16 +287,26 @@ footer {
         padding-left: 0;
         z-index: 1;
         border: 1px solid slategray;
-        background-color: #FFE7C3;
-        margin: 1em 65% 1em 2em; 
+        background-color: rgba(112, 128, 144, 0.37);
+        margin: 1em 65% 1em 2em;
         padding-left: 1em;
         padding-right: 1em;
-        width: initial;
+        width: 17em;
         height: fit-content;
+
+    }
+
+    .summarybox h3 {
+        color: white;
     }
 
     .summarybox p {
         margin-bottom: 0;
+        color: white;
+    }
+
+    .summarybox span {
+        color: #FFBD59;
     }
 
     .forecasth3 {
@@ -253,6 +314,7 @@ footer {
         background-color: white;
         height: 2.5em;
         margin: none;
+        display: block;
     }
 
     #fiveday {
@@ -275,7 +337,12 @@ footer {
     .articlebox #bigarticlepic {
         display: block;
         float: right;
-        margin-right: 3em;
+        margin-right: 1em;
+        margin-top: -1.5em;
+    }
+
+    .readmore {
+        margin: 0;
     }
 
     #smallarticlepic {
@@ -298,11 +365,11 @@ footer {
     }
 
     .map {
+        display: inline-block;
         grid-row: 1 / 6;
         margin-top: 2em;
         margin-left: 2em;
         width: 100%;
-        ma
     }
 
     #outputspan {
@@ -312,37 +379,16 @@ footer {
     #address {
         display: block;
     }
-    
-    .socials {
-        max-width: 100px;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        column-gap: 10%;
-    }
+
+
 
 }
 
-@media only screen and (min-width: 684px) {
-    
-    .elipsis {
-        display: none;
-    }
-
-    .mediumsummary {
-        display: inline;
-    }
-    
-
-}
+@media only screen and (min-width: 684px) {}
 
 
 
 @media only screen and (min-width: 902px) {
-    
-    
-    .bigsummary {
-        display: inline;
-    }
 
     .summarybox {
         top: .7em;
