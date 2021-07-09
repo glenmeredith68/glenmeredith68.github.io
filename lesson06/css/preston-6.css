@@ -1,0 +1,409 @@
+body {
+    font-family: 'Alegreya', serif;
+    color: rgb(43, 46, 46);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #FFBD59;
+    padding: .25em;
+    font-family: 'Alegreya SC', serif;
+}
+
+#logo {
+    width: 5em;
+    grid-row: 1 / 3;
+}
+
+h1 {
+    grid-column: 2 / 4;
+    margin-bottom: 0;
+    margin-top: .5em;
+    font-family: 'Alegreya', serif;
+}
+
+header div {
+    grid-column: 2/ 4;
+}
+
+.ham {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    padding-top: .5em;
+    padding-right: .5em;
+    font-size: 2em;
+}
+
+.navigation {
+    list-style: none;
+    color: rgb(43, 46, 46);
+    font-size: 1.25em;
+    background-color: #FFBD59;
+    font-family: 'Alegreya SC', serif;
+}
+
+.navigation li {
+    display: none;
+}
+
+a {
+    color: rgb(43, 46, 46);
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+ul li a {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.navigation li a:hover {
+    text-decoration: underline double lightslategray;
+    font-style: italic;
+
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    margin: .5em 1em;
+    width: 90%;
+}
+
+.summarybox {
+    margin-bottom: 1em;
+}
+
+.conditionsbox {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.conditions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conditions p {
+    margin: 0;
+}
+
+.currently {
+    color: #da9a3a;
+}
+
+.articlebox {
+
+    margin: 0 auto;
+    border: 1px solid slategray;
+    padding: 1em;
+}
+
+.forecasth3 {
+    background-color: #FFE7C3;
+    height: 4em;
+    border: 1px solid slategray;
+    border-bottom: none;
+    margin: 0 auto;
+    display: none;
+}
+
+#fiveday {
+    text-align: center;
+
+}
+
+.lilsuns {
+    display: none;
+}
+
+h3 a {
+    display: block;
+}
+
+
+
+#bigarticlepic {
+    display: none;
+}
+
+.bigarticlep {
+    display: none;
+}
+
+.boldwords {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.readmore {
+    color: rgb(20, 20, 155);
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.readmore:hover {
+    color: #da9a3a;
+}
+
+.articlebox h4 a {
+    color: black;
+    text-decoration: none;
+}
+
+.pancakegrid {
+    background-color: #04389e;
+    display: none;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #FFBD59;
+    font-size: 1em;
+}
+
+.footercontent {
+    padding: 1em;
+    padding-top: .25em;
+
+}
+
+#address {
+    display: none;
+}
+
+.contact {
+    font-size: 1.2em;
+}
+
+.map {
+    display: none;
+}
+
+.socials {
+    max-width: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10%;
+}
+
+
+
+@media only screen and (min-width: 594px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        column-gap: 2.5em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav {
+        border: 3px solid lightslategray;
+        margin: 1em 2em 0em 2em;
+    }
+
+    ul li a {
+        border-top: 0px solid white;
+    }
+
+    ul {
+        margin-top: 20px;
+    }
+
+    .active {
+        color: #da9a3a;
+
+    }
+
+    .navigation {
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        text-align: center;
+        background-color: white;
+
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation li a:hover {
+        color: #FFBD59;
+    }
+
+    .ham {
+        display: none;
+    }
+
+    main {
+        margin: .5em auto;
+    }
+
+    .heroimg {
+        position: relative;
+        height: 100%;
+        min-height: 212px;
+        width: 900px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .heroimg img {
+        object-fit: cover;
+    }
+
+    .summarybox {
+        position: absolute;
+        top: 0;
+        left: .2em;
+        padding-left: 0;
+        z-index: 1;
+        border: 1px solid slategray;
+        background-color: rgba(112, 128, 144, 0.37);
+        margin: 1em 65% 1em 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 17em;
+        height: fit-content;
+
+    }
+
+    .summarybox h3 {
+        color: white;
+    }
+
+    .summarybox p {
+        margin-bottom: 0;
+        color: white;
+    }
+
+    .summarybox span {
+        color: #FFBD59;
+    }
+
+    .forecasth3 {
+        border: none;
+        background-color: white;
+        height: 2.5em;
+        margin: none;
+        display: block;
+    }
+
+    #fiveday {
+        text-align: left;
+    }
+
+    .lilsuns {
+        border: 1px solid slategray;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin-bottom: 1em;
+        background-color: #FFE7C3;
+        padding: 3px;
+    }
+
+    .lilsuns img {
+        margin: 0 auto;
+    }
+
+    .articlebox #bigarticlepic {
+        display: block;
+        float: right;
+        margin-right: 1em;
+        margin-top: -1.5em;
+    }
+
+    .readmore {
+        margin: 0;
+    }
+
+    #smallarticlepic {
+        display: none;
+    }
+
+    .smallarticlep {
+        display: none;
+    }
+
+    .bigarticlep {
+        display: block;
+    }
+
+    .footercontent {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(5, auto);
+        column-gap: 3em;
+    }
+
+    .map {
+        display: inline-block;
+        grid-row: 1 / 6;
+        margin-top: 2em;
+        margin-left: 2em;
+        width: 100%;
+    }
+
+    #outputspan {
+        margin-left: 2em;
+    }
+
+    #address {
+        display: block;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 684px) {}
+
+
+
+@media only screen and (min-width: 902px) {
+
+    .summarybox {
+        top: .7em;
+    }
+
+    .summarybox p {
+        margin-bottom: 16px;
+    }
+
+}
+
+
+@media only screen and (min-width: 63.5em) {
+
+    .heroimg {
+        margin: 0 auto;
+    }
+}

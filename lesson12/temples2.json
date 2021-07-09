@@ -6,7 +6,6 @@
         "city":"Idaho Falls",
         "state":"ID",
         "zip":83402,
-        "country": "US",
         "imageurl":"https://assets.ldscdn.org/90/a0/90a0c0d599f94a2d955930e90fa95b9aa85a5004/idaho_falls_idaho_temple.png",
         "presidents":[
             "David Smith","William Killpack","Parley Arave","Cecil Hart","Delbert Groberg","Devere Harris","Rheim Jones","Milton Romrell","C. Gayle Williams","Preston Brimhall","Glen Nelson","Mark Ricks","Newell Richardson","John Groberg","Larry Stoddard","Gerald Mead","Donald Archibald","Doyle Batt"
@@ -49,23 +48,5 @@
         "presidents":[
             "Henry Chesney","H. Aldridge Gillespie","Michael Southward","Don Hansen","Travis Campbell","Kent Bowman"
         ]
-    },
-    
-    {
-        "name":"Taipei Taiwan Temple",
-        "phone":"(886) 2-2192-4930",
-        "address1":"256 Ai Kuo East Road,",
-        "city":"Taipei",
-        "state":"",
-        "zip":10642,
-        "country": "Taiwan",
-        "imageurl":"https://assets.ldscdn.org/da/9c/da9cd879449200f044bf500447f5e0cff545071e/taipei_temple_lights_night_holiness.jpeg",
-        "presidents":[
-            "John W. Clifford","Paul V. Hyer","Barton S. Gillespie","Wei Wong","Fan Hsieh","Thomas P. Nielson", "Jon N. Vawdrey", "Gerald H. Walker", "Harvey G. Horner", "Yu Chen 'Philip' Ho", "Shin Lu", "Hsien C. Chen", "Liang Shih Wei 'Carl'"
-        ],
-        "baptismSchedule":["7:30AM", "9:00AM", "10:30AM", "12:00PM", "1:30PM", "3:30PM", "5:00PM", "6:30PM", "8:00PM"],
-        "initiatorySchedule":["7:30AM", "8:30AM", "9:30AM", "10:30AM", "11:30AM", "12:30PM", "1:30PM", "2:30PM", "3:30PM", "4:30PM", "5:30PM", "6:30PM", "7:30PM", "8:30PM"],
-        "endowmentSchedule":["7:30AM", "9:30AM", "11:30AM", "1:30PM", "3:30PM", "5:30PM", "7:30PM", "8:30PM"],
-        "sealingSchedule":["7:30AM", "9:00AM", "10:30AM", "12:00PM", "1:30PM", "3:30PM", "5:00PM", "6:30PM", "8:00PM"]
     } 
 ]
