@@ -112,7 +112,7 @@ main {
 }
 
 .forecasth3 {
-    background-color: #FFE7C3;
+    background-color: #ffb547;
     height: 4em;
     border: 1px solid slategray;
     border-bottom: none;
@@ -238,7 +238,7 @@ footer {
     }
 
     .active {
-        color: #da9a3a;
+        color: #3C4F76;
 
     }
 
@@ -326,7 +326,7 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         margin-bottom: 1em;
-        background-color: #FFE7C3;
+        background-color: #3C4F76;
         padding: 3px;
     }
 

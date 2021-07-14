@@ -11,7 +11,9 @@ function toggleMenu() {
     document.getElementsByClassName('navigation')[0].classList.toggle('responsive');
 }
 
-window.onresize = () => {if (window.innerWidth > 760) document.getElementsByClassName('navigation')[0].classList.remove('responsive')};
+window.onresize = () => {
+    if (window.innerWidth > 760) document.getElementsByClassName('navigation')[0].classList.remove('responsive')
+};
 
 function getDate() {
     let year = new Date().getFullYear();
@@ -69,12 +71,16 @@ function pancakeBanner() {
 }
 pancakeBanner();
 
-windchill = () => {
-    let temp = parseInt(document.getElementById('currenttemp').value);
-    let windspeed = parseInt(document.getElementById('windspeed').value)
-    let chilltemp, roundtemp;
-    chilltemp = 35.74 + 0.6615 * temp - 35.75 * Math.pow(windspeed, .016) + 0.4275 * temp * Math.pow(windspeed, .016);
-    roundtemp = Math.round(chilltemp*100)/100;
-    document.getElementById('windchill').innerHTML = roundtemp;
-}
-windchill();
+// windchill = () => {
+//     let temp = parseFloat(document.getElementById('currenttemp').innerHTML);
+//     let windspeed = parseFloat(document.getElementById('windspeed').innerHTML);
+//     let chilltemp, roundtemp;
+//     if (temp <= 60) {
+//         chilltemp = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + (0.4275 * temp * Math.pow(windspeed, .16));
+//         roundtemp = Math.round(chilltemp * 100) / 100;
+     
+//     } else {
+//          roundtemp = temp}
+//     document.getElementById('windchill').innerHTML = roundtemp;
+// }
+// windchill();
