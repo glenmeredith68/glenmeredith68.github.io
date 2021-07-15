@@ -206,12 +206,14 @@ footer {
     column-gap: 10%;
 }
 /* GALLERY PAGE */
+
 .gallerygrid{
     display:grid;
     grid-template-columns: 1fr;
     gap: 1em;
     justify-items: center;
     margin-bottom: 2em;
+    margin-top: 2em;
 }
 .gallerydescription {
     display: none;
