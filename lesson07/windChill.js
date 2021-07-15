@@ -1,6 +1,6 @@
 windchill = () => {
-    let temp = parseFloat(document.getElementById('currenttemp').innerHTML);
-    let windspeed = parseFloat(document.getElementById('windspeed').innerHTML);
+    let temp = parseFloat(document.getElementById('currenttemp').textContent);
+    let windspeed = parseFloat(document.getElementById('windspeed').textContent);
     let chilltemp, roundtemp;
     if (temp <= 60) {
         chilltemp = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + (0.4275 * temp * Math.pow(windspeed, .16));
