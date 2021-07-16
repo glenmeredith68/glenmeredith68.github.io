@@ -1,0 +1,56 @@
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td {
+    border-collapse: collapse;
+    border: 1px solid gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+table {
+    margin-top: 5em;
+    margin-left: 5em;
+    width: 16em;
+    height: 17em;
+    box-shadow: 4px 4px 10px steelblue;
+}
+
+.mint {
+    background-color: #e7ffed;
+}
+
+.grey {
+    background-color: #e7f0ed;
+}
+
+.navy {
+    background-color: #628ca6;
+    color: white;
+}
+
+.teal {
+    background-color: #7fb9c2;
+}
+
+.headers td {
+    font-weight: bold;
+}
+
+thead tr th {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+tfoot td {
+    font-size: .7em;
+    padding: 7px;
+}
+
+.blackfriday {
+    font-style: italic;
+}
