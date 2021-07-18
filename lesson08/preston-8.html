@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/preston-8.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="images/sunLogo.png">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya:wght@400;500&display=swap"
+        rel="stylesheet"> -->
+    <title>Preston Sun</title>
+</head>
+
+<body>
+    <!-- pancake banner -->
+    <div class='pancakegrid'>
+        <img src="images/prestonPancakesSmall.jpg" alt="Yummy Pancakes">
+        <div class='pancaketext'>
+            <h2>Tomorrow! Saturday = Pancakes in the Park</h2>
+            <h3>9AM Saturday at the city park pavilion</h3>
+        </div>
+    </div>
+    <header>
+        <img id='logo' src="images/sunLogo.png" alt="Preston Sun Logo">
+        <h1>Preston Sun</h1>
+        <div class="conditions">We don't hide behind clouds</div>
+        <a class='ham' onclick='toggleMenu()' href="#">&#9776;</a>
+    </header>
+    <nav>
+        <ul class='navigation'>
+            <li><a href="#">Home</a></li>
+            <li><a class='active' href="#">&#9758; Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="heroimg">
+            <!-- <img id='hero' src='images/prestonHero.jpeg' alt="Dramatic mountains with great beauty"> -->
+            <picture>
+                    <source srcset='images/franklinMedium.jpeg' media='(min-width: 595px) and (max-width: 899px)'>
+                        <source srcset='images/franklinLarge.jpeg' media='(min-width: 900px)'>
+                <img src="images/franklinSmall.jpeg" alt="Picture of Franklin" id='hero' >
+            </picture>
+            <div class="summarybox">
+                <h3>Weather Summary</h3>
+                <div class="conditionsbox">
+                    <div class="conditions">
+                        <p>Currently: </p><span class='currently'>Sunny</span>
+                    </div>
+                    <div class="conditions">
+                        <p>High: </p><span><span class='currently'
+                                id='currenttemp'>36</span><span>ºF</span></span>
+                    </div>
+                    <div class="conditions">
+                        <p>Low: </p><span class='currently'>26 ºF</span>
+                    </div>
+                    <div class="conditions">
+                        <p>Wind Chill: </p><span><span class='currently'
+                                id='windchill'></span><span>ºF</span></span>
+                    </div>
+                    <div class="conditions">
+                        <p>Humidity: </p><span class='currently'>69%</span>
+                    </div>
+                    <div class="conditions">
+                        <p>Wind Speed: </p><span class='currently' id='windspeed'>5<span>
+                                mph</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecasth3">
+            <h3 id='fiveday'><a>Five Day Forecast</a></h3>
+        </div>
+        <div class="lilsuns">
+            <img src="https://source.unsplash.com/random/50x50/?sun" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?rain" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?cloud" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?lightning" alt="PLACEHOLDER">
+            <img src="https://source.unsplash.com/random/50x50/?snow" alt="PLACEHOLDER">
+        </div>
+        <div class='articlebox'>
+            <h4><a class='readmore' target='_blank'
+                    href="https://www.prestonidaho.net/mayor-city-council/"> A Message From the
+                    Mayor</a>
+            </h4>
+            <img id='bigarticlepic' src='images/prestonArticlePic.jpg'
+                alt="Quaint Preston with sunset">
+            <p class='smallarticlep'> Preston is an agricultural community located on the most
+                northern side of the pristine Cache Valley touting views that can arguably be
+                unmatched. <span class='boldwords'>Cache Valley</span> is also known as
+                “Bridgerland”, which was discovered and
+                explored by the famous American mountain man Jim Bridger nearly 200 years ago. </p>
+            <p class="bigarticlep">&nbsp;&nbsp;&nbsp;&nbsp;"<span class='boldwords'>Preston</span>
+                is an agricultural community located on the most
+                northern side of the pristine Cache Valley touting views that can arguably be
+                unmatched. Cache Valley is also known as “Bridgerland”, which was discovered and
+                explored by the famous American mountain man Jim Bridger nearly 200 years ago. All
+                throughout the year Preston serves as the primary hub to the most rewarding family
+                outdoor activities found in the upper intermountain west. These activities include:
+                <span class="boldwords">snowmobiling</span> in Strawberry Canyon, feeding the family
+                at numerous local fast food
+                restaurants before driving 15 minutes to the only ski resort in Cache Valley.
+                Filling your boat and/or ATV before <span class='boldwords'>waterskiing</span> and
+                <span class="boldwords">fishing</span> on the multiple
+                reservoirs, streams and rivers that also include hunting, hiking and camping into
+                the Cache & Caribou National Forests..."
+            </p>
+            <a class='readmore' target='_blank'
+                href="https://www.prestonidaho.net/mayor-city-council/">Keep Reading</a>
+            <img id='smallarticlepic' src='images/prestonArticlePic.jpg'
+                alt="Quaint Preston with sunset">
+        </div>
+        <a class='breadcrumb' href="preston-8.html">Top of page</a>
+    </main>
+    <footer>
+        <div class="footercontent">
+            <h3>Contact Information</h3>
+            <p id="address"><span class="contact">📍 </span> 123 West St. Monmouth, OR 12345</p>
+            <p><span class='contact'>📧 </span> example@me.com</p>
+            <p><span class='contact'>📞 </span> 123-456-7890</p>
+            <img class='map' src="images/monmouthMap.png" alt="Map of Momnouth, OR">
+            <div class="socials">
+                <a href="http://www.facebook.com"><img src="../images/facebook.png"
+                        alt="Facebook Logo"></a>
+                <a href="http://www.pinterest.com"><img src="../images/pinterest.png"
+                        alt="Pinterest Logo"></a>
+                <a href="http://www.youtube.com"><img src="../images/youtube.png"
+                        alt="Youtube Logo"></a>
+            </div>
+            <div class="date"><span id="outputspan"></span></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Alegreya', 'Alegreya SC', 'Material Icons'
+                ]
+            }
+        });
+    </script>
+</body>
+<script src="preston-8.js"></script>
+<script src="windChill.js"></script>
+
+</html>
